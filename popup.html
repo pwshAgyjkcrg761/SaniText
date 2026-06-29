@@ -1,0 +1,111 @@
+<!--
+// ==============================================================================
+// SCRIPT: popup.html for Plain Text Sanitizer
+// VERSION: 2026.06.29__15.29.30
+// TARGET: Brave 1.91.180 / Chromium 149.0.7827.201
+//
+// Copyright (C) 2026 pwshAgyjkcrg761
+// 
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+// ==============================================================================
+// <PROTECTED>
+// ==============================================================================
+// AI INSTRUCTIONS v2026.06.24__06.54.45 : 
+//
+// 1. MESSAGE STAMP: 
+//    - Every response containing code MUST begin with a standalone version stamp.
+//    - Use CHICAGO TIME (Central Time), 24-hour clock.
+//    - Format: YYYY.MM.DD__HH.MM.SS.
+//    - CRITICAL: Use the time provided in the prompt or at https://www.timeanddate.com/worldclock/usa/chicago. Ensure minutes are exact.
+//
+// 2. VERSION SNIPPET PROHIBITION:
+//    - DO NOT provide code snippets, anchors, or steps to update the script's internal VERSION comment or $scriptVersion variable. 
+//    - The user handles internal file versioning manually based on the Message Stamp.
+//
+// 3. SCRIPT OUTPUT (SURGICAL FIXES ONLY):
+//    - Provide minimal, highly targeted, surgical edits. Do not rewrite large blocks or entire functions.
+//    - Always use a codebox with a copy button.
+//    - Multiple modifications MUST be presented strictly ONE step at a time. Wait for user confirmation before proceeding to the next step. 
+//    - DO NOT modify or refactor any code inside <PROTECTED> tags.
+//
+// 4. VERBATIM ANCHOR PROTOCOL (FOR NOTEPAD++):
+//    - To facilitate "Find" in Notepad++, always structure edits with:
+//      - "Verbatim Anchor (Before)" - The exact lines of existing code immediately before the change.
+//      - "Verbatim Anchor (After)" - The exact lines of existing code immediately after the change.
+//      - "Snippet to REPLACE" - The exact code block to be deleted.
+//      - "What to PASTE in its place" - The new code block to be inserted.
+//    - Do not summarize, truncate, or refactor the existing code used as an anchor.
+//    - Match spaces, comments, and symbols exactly as they appear in the file.
+//
+// 5. CONTENT PRESERVATION:
+//    - Do not remove, modify, or strip out telemetry data or DevDebug information from any provided code.
+// ==============================================================================
+// </PROTECTED>
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    :root {
+      --bg-color: #f1f3f4; 
+      --text-color: #202124;
+      --hover-color: rgba(0, 0, 0, 0.05);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg-color: #202124;
+        --text-color: #e8eaed;
+        --hover-color: rgba(255, 255, 255, 0.1);
+      }
+    }
+    body { 
+      width: 280px; 
+      padding: 12px; 
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      font-size: 13px; 
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+    }
+    .row { 
+      margin-bottom: 8px; 
+      display: flex; 
+      align-items: center; 
+      cursor: pointer;
+      padding: 6px;
+      border-radius: 4px;
+    }
+    .row:hover { background-color: var(--hover-color); }
+    input[type="checkbox"] { margin-right: 12px; cursor: pointer; }
+    label { cursor: pointer; user-select: none; flex-grow: 1; font-weight: 500; }
+    .desc { font-size: 11px; opacity: 0.7; display: block; margin-top: 2px; font-weight: normal; }
+  </style>
+</head>
+<body>
+  <div class="row">
+    <input type="checkbox" id="lowerCaseToggle">
+    <label for="lowerCaseToggle">Lowercase Mode<span class="desc">Converts all copied text to lowercase.</span></label>
+  </div>
+  <div class="row">
+    <input type="checkbox" id="slashToggle">
+    <label for="slashToggle">Convert / to ∕ Division Slash<span class="desc">Replaces / with a character legal in filenames.</span></label>
+  </div>
+  <div class="row">
+    <input type="checkbox" id="legalQToggle">
+    <label for="legalQToggle">Use Legal Full-width ？；<span class="desc">Replaces ? and ; with wide versions for scripts.</span></label>
+  </div>
+  <div class="row">
+    <input type="checkbox" id="partToggle">
+    <label for="partToggle">Remove "Part" from Numbers<span class="desc">Strips "Part" from "Part 1", "Part 2", etc.</span></label>
+  </div>
+  <div class="row">
+    <input type="checkbox" id="sanitizeToggle">
+    <label for="sanitizeToggle">Remove Illegal Characters<span class="desc">Strips \ / : * ? " < > | and legal ; from copied text.</span></label>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
