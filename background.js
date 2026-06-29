@@ -1,5 +1,5 @@
 // ==============================================================================
-// SCRIPT: background.js for Plain Text Copier
+// SCRIPT: background.js for Plain Text Sanitizer
 // VERSION: 2026.06.29__15.29.30
 // TARGET: Brave 1.91.180 / Chromium 149.0.7827.201
 //
