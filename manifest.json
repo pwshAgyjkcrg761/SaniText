@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Plain Text Sanitizer v2026.06.29__15.29.30",
+  "description": "A utility to copy selection as clean plain text with advanced filename sanitization and formatting options.",
+  "version": "2026.6.29.55770",
+  "icons": {
+    "16": "icons/plain-text-sanitizer-icon-16x16.png",
+    "32": "icons/plain-text-sanitizer-icon-32x32.png",
+    "48": "icons/plain-text-sanitizer-icon-48x48.png",
+    "180": "icons/plain-text-sanitizer-icon-180x180.png",
+    "192": "icons/plain-text-sanitizer-icon-192x192.png",
+    "512": "icons/plain-text-sanitizer-icon-512x512.png"
+  },
+  "permissions": ["contextMenus", "storage", "clipboardWrite", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+  
+}
