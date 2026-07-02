@@ -1,10 +1,10 @@
-# Plain Text Sanitizer
+# SaniText™
 **A lightweight, precision utility for extracting clean, filename-safe text from the web.**
 
 ---
 
 ## Overview
-Plain Text Sanitizer is a specialized browser extension designed for developers, archivists, and power users who need to copy text from web pages directly into scripts, filenames, or command-line environments. Unlike standard "copy as plain text" tools, this extension offers a surgical sanitization engine that resolves character conflicts before they hit your clipboard.
+SaniText™ is a specialized browser extension designed for developers, archivists, and power users who need to copy text from web pages directly into scripts, filenames, or command-line environments. Unlike standard "copy as plain text" tools, this extension offers a surgical sanitization engine that resolves character conflicts before they hit your clipboard.
 
 **Primary Environment:** This extension was developed and tested exclusively on **Brave**. While compatible with other Chromium environments, Brave remains the recommended target.
 
@@ -43,6 +43,6 @@ To maintain a "noise-free" experience, the extension bypasses system-level notif
 *This extension modifies your clipboard content. The author is not responsible for any accidental data loss, overwritten clipboard history, or script errors resulting from the use of sanitized text. Always verify critical filenames and scripts before execution.*
 
 ---
-> **Document Control**
-> *This document is up-to-date with the following version of Plain Text Sanitizer.*
-> *2026.06.29__15.29.30*
+> **Document Control**<br>
+> *This document is up-to-date with the following version of SaniText™.*<br>
+> *2026.07.02__13.09.33*
