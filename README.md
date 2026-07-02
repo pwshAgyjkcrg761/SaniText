@@ -1,4 +1,4 @@
-# SaniText™
+# <img src="icons/src/SaniText-icon-clipboard-indigo-yellow-star-top-right-corner.svg" width="32" height="32"> SaniText™ <img src="icons/src/SaniText-icon-clipboard-indigo-yellow-star-top-right-corner.svg" width="32" height="32">
 **A lightweight, precision utility for extracting clean, filename-safe text from the web.**
 
 ---
