@@ -31,6 +31,16 @@ To maintain a "noise-free" experience, the extension bypasses system-level notif
 
 ---
 
+## Assets & Licensing
+This software is released under the **GNU General Public License v3**.
+
+### Icon Credits
+* **File:** `SaniText-icon-clipboard-indigo-yellow-star-top-right-corner.svg`
+    * **License:** Copyright (C) 2026 pwshAgyjkcrg761. All rights reserved.
+
+
+---
+
 ## Dependencies
 * **Browser:** Brave (Recommended) or other Chromium-based browsers (Chrome, Edge, Vivaldi).
 * **Manifest Version:** Built on Manifest V3.
