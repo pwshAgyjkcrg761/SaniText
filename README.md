@@ -31,6 +31,18 @@ To maintain a "noise-free" experience, the extension bypasses system-level notif
 
 ---
 
+## Installation (Developer Mode)
+Since SaniText™ is a specialized utility not hosted on the Chrome Web Store, it must be installed manually in Brave using "Unpacked" mode:
+
+1. **Download the Source:** Clone this repository or download the source code as a ZIP file and extract it to a permanent folder on your computer.
+2. **Open Extensions Page:** In Brave, navigate to `brave://extensions` via the address bar.
+3. **Enable Developer Mode:** Toggle the **Developer mode** switch in the top-right corner to **On**.
+4. **Load the Extension:** Click the **Load unpacked** button that appears in the top toolbar.
+5. **Select Folder:** In the file browser, select the root folder of this repository (the folder containing `manifest.json`).
+6. **Pin for Easy Access:** Click the **Extensions** (puzzle piece) icon in the Brave toolbar and click the **Pin** icon next to SaniText. This allows you to quickly access the sanitization toggles.
+
+---
+
 ## Assets & Licensing
 This software is released under the **GNU General Public License v3**.
 
@@ -55,4 +67,4 @@ This software is released under the **GNU General Public License v3**.
 ---
 > **Document Control**<br>
 > *This document is up-to-date with the following version of SaniText™.*<br>
-> *2026.07.02__13.09.33*
+> *2026.07.02__13.29.45*
