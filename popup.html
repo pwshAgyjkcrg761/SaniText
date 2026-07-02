@@ -1,7 +1,7 @@
 <!--
 // ==============================================================================
-// SCRIPT: popup.html for Plain Text Sanitizer
-// VERSION: 2026.06.29__15.29.30
+// SCRIPT: popup.html for SaniText™
+// VERSION: 2026.07.02__13.29.45
 // TARGET: Brave 1.91.180 / Chromium 149.0.7827.201
 //
 // Copyright (C) 2026 pwshAgyjkcrg761
@@ -10,6 +10,14 @@
 // it under the terms of the GNU General Public License as published by
 // the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program. If not, see <https://www.gnu.org/licenses/gpl-3.0.html>.
 // ==============================================================================
 // <PROTECTED>
 // ==============================================================================
@@ -83,9 +91,25 @@
     input[type="checkbox"] { margin-right: 12px; cursor: pointer; }
     label { cursor: pointer; user-select: none; flex-grow: 1; font-weight: 500; }
     .desc { font-size: 11px; opacity: 0.7; display: block; margin-top: 2px; font-weight: normal; }
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 12px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--hover-color);
+    }
+    .header img { width: 20px; height: 20px; }
+    .header span { font-size: 15px; font-weight: 600; }
   </style>
 </head>
 <body>
+  <div class="header">
+    <img src="icons/src/SaniText-icon-clipboard-indigo-yellow-star-top-right-corner.svg" alt="icon">
+    <span>SaniText</span>
+    <img src="icons/src/SaniText-icon-clipboard-indigo-yellow-star-top-right-corner.svg" alt="icon">
+  </div>
   <div class="row">
     <input type="checkbox" id="lowerCaseToggle">
     <label for="lowerCaseToggle">Lowercase Mode<span class="desc">Converts all copied text to lowercase.</span></label>
