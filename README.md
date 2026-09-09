@@ -3,6 +3,8 @@
 
 ---
 
+![SaniText Main Interface](images/SaniText_brave_main.png)
+
 ## Overview
 SaniText™ is a specialized browser extension designed for developers, archivists, and power users who need to copy text from web pages directly into scripts, filenames, or command-line environments. Unlike standard "copy as plain text" tools, this extension offers a surgical sanitization engine that resolves character conflicts before they hit your clipboard.
 
