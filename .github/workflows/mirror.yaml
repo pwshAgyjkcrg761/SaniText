@@ -40,17 +40,17 @@ jobs:
           git push https://x-access-token:${{ secrets.MIRROR_KEY }}@github.com/pwshAgyjkcrg761/SaniText.git main --force
           git push --prune https://x-access-token:${{ secrets.MIRROR_KEY }}@github.com/pwshAgyjkcrg761/SaniText.git "refs/tags/*:refs/tags/*"
 
-          # 5. Delete orphaned GitHub releases whose tags no longer exist
-          for tag in $(gh release list --repo pwshAgyjkcrg761/SaniText --limit 1000 --json tagName --jq '.[].tagName'); do
-            if ! git rev-parse -q --verify "refs/tags/$tag" >/dev/null; then
-              echo "Deleting orphaned release for tag: $tag"
-              gh release delete "$tag" --repo pwshAgyjkcrg761/SaniText --yes
-            fi
-          done
+          # # 5. Delete orphaned GitHub releases whose tags no longer exist
+          # for tag in $(gh release list --repo pwshAgyjkcrg761/SaniText --limit 1000 --json tagName --jq '.[].tagName'); do
+            # if ! git rev-parse -q --verify "refs/tags/$tag" >/dev/null; then
+              # echo "Deleting orphaned release for tag: $tag"
+              # gh release delete "$tag" --repo pwshAgyjkcrg761/SaniText --yes
+            # fi
+          # done
 
-          # 6. Sync Releases and custom assets from Disroot to GitHub
-          DISROOT_API="https://git.disroot.org/api/v1/repos/pwshAgyjkcrg761/SaniText/releases"
-          RELEASES_JSON=$(curl -sSL -H "Authorization: token $DISROOT_TOKEN" "$DISROOT_API" || echo "[]")
+          # # 6. Sync Releases and custom assets from Disroot to GitHub
+          # DISROOT_API="https://git.disroot.org/api/v1/repos/pwshAgyjkcrg761/SaniText/releases"
+          # RELEASES_JSON=$(curl -sSL -H "Authorization: token $DISROOT_TOKEN" "$DISROOT_API" || echo "[]")
 
           if echo "$RELEASES_JSON" | jq -e 'if type=="array" then . else empty end' >/dev/null 2>&1; then
             echo "$RELEASES_JSON" | jq -c '.[]' | while read -r rel; do
